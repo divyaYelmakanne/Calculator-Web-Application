@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    #app {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .scientific-buttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .memory-buttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .btn {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #display {
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .toggles button {
+        display: block;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .history-panel {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,66 @@
+:root {
+    --bg-color: #f0f0f0;
+    --calc-bg: white;
+    --btn-bg: #fff;
+    --btn-hover: #e9e9e9;
+    --operator-bg: #f8f9fa;
+    --equal-bg: #28a745;
+    --equal-hover: #218838;
+    --text-color: black;
+    --border-color: #ccc;
+}
+
+.dark-theme {
+    --bg-color: #333;
+    --calc-bg: #444;
+    --btn-bg: #555;
+    --btn-hover: #666;
+    --operator-bg: #666;
+    --equal-bg: #28a745;
+    --equal-hover: #218838;
+    --text-color: white;
+    --border-color: #777;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.calculator {
+    background-color: var(--calc-bg);
+    border: 1px solid var(--border-color);
+}
+
+#display {
+    background-color: var(--calc-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.btn {
+    background-color: var(--btn-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.operator {
+    background-color: var(--operator-bg);
+}
+
+.equal {
+    background-color: var(--equal-bg);
+}
+
+.equal:hover {
+    background-color: var(--equal-hover);
+}
+
+.history-panel {
+    background-color: var(--calc-bg);
+    border: 1px solid var(--border-color);
+}

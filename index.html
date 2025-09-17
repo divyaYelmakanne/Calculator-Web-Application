@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Web App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" href="assets/images/calculator-icon.png" type="image/png">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Calculator</h1>
+            <div class="toggles">
+                <button id="theme-toggle">Toggle Theme</button>
+                <button id="scientific-toggle">Scientific Mode</button>
+            </div>
+        </header>
+        <main>
+            <div class="calculator">
+                <div class="display">
+                    <input type="text" id="display" readonly>
+                </div>
+                <div class="buttons">
+                    <button class="btn" data-value="C">C</button>
+                    <button class="btn" data-value="AC">AC</button>
+                    <button class="btn" data-value="backspace">⌫</button>
+                    <button class="btn operator" data-value="/">/</button>
+                    <button class="btn" data-value="7">7</button>
+                    <button class="btn" data-value="8">8</button>
+                    <button class="btn" data-value="9">9</button>
+                    <button class="btn operator" data-value="*">*</button>
+                    <button class="btn" data-value="4">4</button>
+                    <button class="btn" data-value="5">5</button>
+                    <button class="btn" data-value="6">6</button>
+                    <button class="btn operator" data-value="-">-</button>
+                    <button class="btn" data-value="1">1</button>
+                    <button class="btn" data-value="2">2</button>
+                    <button class="btn" data-value="3">3</button>
+                    <button class="btn operator" data-value="+">+</button>
+                    <button class="btn" data-value="0">0</button>
+                    <button class="btn" data-value=".">.</button>
+                    <button class="btn equal" data-value="=">=</button>
+                </div>
+                <div class="scientific-buttons" id="scientific-panel" style="display: none;">
+                    <button class="btn" data-value="sin">sin</button>
+                    <button class="btn" data-value="cos">cos</button>
+                    <button class="btn" data-value="tan">tan</button>
+                    <button class="btn" data-value="log">log</button>
+                    <button class="btn" data-value="sqrt">√</button>
+                    <button class="btn" data-value="^">^</button>
+                    <button class="btn" data-value="(">(</button>
+                    <button class="btn" data-value=")">)</button>
+                </div>
+                <div class="memory-buttons">
+                    <button class="btn" data-value="M+">M+</button>
+                    <button class="btn" data-value="M-">M-</button>
+                    <button class="btn" data-value="MR">MR</button>
+                    <button class="btn" data-value="MC">MC</button>
+                </div>
+            </div>
+            <div class="history-panel">
+                <h3>History</h3>
+                <ul id="history-list"></ul>
+                <button id="export-history">Export History</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Calculator Web App</p>
+        </footer>
+    </div>
+    <script src="assets/js/calculator.js"></script>
+    <script src="assets/js/history.js"></script>
+    <script src="assets/js/scientific.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/keyboard.js"></script>
+</body>
+</html>
